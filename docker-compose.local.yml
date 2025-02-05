@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   oxygen:
-    image: ghcr.io/oxygenpay/oxygen:latest
+    image: ghcr.io/zenovak/oxygen:latest
     command: all-in-one --skip-config
     env_file:
       - docker.env
