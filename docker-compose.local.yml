@@ -7,7 +7,7 @@ services:
       - docker.env
     volumes:
       - './tmp:/src/tmp'
-    ports: [ '80:80' ]
+    ports: [ '3000:3000' ]
     networks: [ net-oxygen ]
     depends_on: [ postgres ]
     restart: on-failure

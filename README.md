@@ -144,7 +144,7 @@ Here are some useful commands:
 ### Updating Tatum subscriptions & URL Webhook links
 If you are changing the following fields in oxygen.env:
 ```
-PROCESSING_WEBHOOK_BASE_PATH=https://pay.lwp.asia
+PROCESSING_WEBHOOK_BASE_PATH=https://pay.your-site.com
 TATUM_API_KEY=""
 TATUM_TEST_API_KEY=""
 ```
@@ -166,7 +166,7 @@ You can use the preconfigured github actions to do this.
 1. Create a new Release on github. This will trigger a build action.
 2. Pull the new release github package onto docker using:
 ```
-docker pull ghcr.io/zenovak/pay.lwp:latest
+docker pull ghcr.io/zenovak/oxygen:latest
 ```
 3. Run docker compose again to load the new changes:
 ```
